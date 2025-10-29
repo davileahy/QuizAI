@@ -10,16 +10,6 @@ const throwValidationError = (message, details = null) => {
   throw new Error(message);
 };
 
-// Funções auxiliares para padronizar logs e erros, seguindo a convenção dos outros services.
-const logAction = (action, details) => {
-    console.log(`[QUIZ SERVICE] 🚀 ${action}`, details);
-};
-
-const throwValidationError = (message, details = null) => {
-    console.error(`[QUIZ SERVICE] ❌ Validação Falhou: ${message}`, details);
-    throw new Error(message);
-};
-
 const quizService = {
     
     /**
